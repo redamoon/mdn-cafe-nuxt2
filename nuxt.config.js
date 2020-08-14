@@ -1,6 +1,6 @@
 const axios = require('axios')
 require('dotenv').config()
-const { API_KEY, API_URL, X_API_KEY } = process.env
+const { API_KEY, API_URL } = process.env
 
 export default {
   /*
@@ -65,16 +65,15 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
-  env: {
-    API_KEY,
-    API_URL,
-    X_API_KEY,
-  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  privateRuntimeConfig: {
+    apiKey: API_KEY,
+    apiUrl: API_URL,
+  },
   generate: {
     routes() {
       const information = axios
