@@ -5,9 +5,7 @@
       message="お知らせやメニューをmicroCMSを導入したDEMOサイトになります。"
     />
     <div class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
-      <base-heading>
-        MdN Cafeのおすすめメニュー
-      </base-heading>
+      <base-heading> MdN Cafeのおすすめメニュー </base-heading>
       <div class="flex flex-wrap justify-between mb-20 md:mb-0">
         <layout-menu-list
           v-for="(item, index) in menuItems"
@@ -26,15 +24,13 @@
       </div>
       <div class="mx-auto mb-20 text-center">
         <nuxt-link
-          class="rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-teal-500 hover:bg-teal-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md"
+          class="font-semibold md:text-lg xl:text-base px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight shadow-md rounded-lg bg-white hover:bg-gray-200 text-gray-800"
           to="/menu"
         >
           メニューの一覧
         </nuxt-link>
       </div>
-      <base-heading>
-        MdN Cafeのお知らせ
-      </base-heading>
+      <base-heading> MdN Cafeのお知らせ </base-heading>
       <div class="mb-20">
         <layout-information-list
           v-for="(item, index) in infoItems"
@@ -46,7 +42,7 @@
       </div>
       <div class="mx-auto mb-20 text-center">
         <nuxt-link
-          class="rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-teal-500 hover:bg-teal-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md"
+          class="font-semibold md:text-lg xl:text-base px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight shadow-md rounded-lg bg-white hover:bg-gray-200 text-gray-800"
           to="/information"
         >
           お知らせの一覧
